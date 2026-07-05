@@ -1,0 +1,100 @@
+[
+  {
+    "id": "OBJ-B3D25AB4EA6A",
+    "name": "James Webb Space Telescope",
+    "category": "instrument",
+    "description": "Infrared space observatory",
+    "domain": "astronomy",
+    "scale": "cosmic",
+    "status": "observed",
+    "created_at": "2026-07-05T22:26:54.135781+00:00",
+    "updated_at": "2026-07-05T22:26:54.135781+00:00",
+    "version": "0.1",
+    "tags": [
+      "JWST",
+      "infrared"
+    ],
+    "relationships": [],
+    "observations": [],
+    "measurements": [],
+    "evidence": [],
+    "unknowns": [],
+    "questions": [],
+    "failures": [],
+    "recoveries": [],
+    "boundaries": [],
+    "confidence": null,
+    "uncertainty": null,
+    "provenance": "manual_entry",
+    "history": [
+      "2026-07-05T22:26:54.135781+00:00: object created"
+    ],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "INST-000000002",
+    "name": "FAST",
+    "category": "instrument",
+    "description": "Radio telescope",
+    "domain": "astronomy",
+    "scale": "cosmic",
+    "status": "observed",
+    "created_at": "2026-07-05T22:50:58.000616+00:00",
+    "updated_at": "2026-07-05T22:50:58.000616+00:00",
+    "version": "0.1",
+    "tags": [
+      "radio"
+    ],
+    "relationships": [],
+    "observations": [],
+    "measurements": [],
+    "evidence": [],
+    "unknowns": [],
+    "questions": [],
+    "failures": [],
+    "recoveries": [],
+    "boundaries": [],
+    "confidence": null,
+    "uncertainty": null,
+    "provenance": "manual_entry",
+    "history": [
+      "2026-07-05T22:50:58.000616+00:00: object created"
+    ],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "OBJ-000000002",
+    "name": "Early galaxies",
+    "category": "phenomenon",
+    "description": "Distant high-redshift galaxies observed in early cosmic history",
+    "domain": "astronomy",
+    "scale": "cosmic",
+    "status": "candidate",
+    "created_at": "2026-07-05T23:26:53.579569+00:00",
+    "updated_at": "2026-07-05T23:26:53.579569+00:00",
+    "version": "0.1",
+    "tags": [
+      "cosmic dawn",
+      "galaxies"
+    ],
+    "relationships": [],
+    "observations": [],
+    "measurements": [],
+    "evidence": [],
+    "unknowns": [],
+    "questions": [],
+    "failures": [],
+    "recoveries": [],
+    "boundaries": [],
+    "confidence": null,
+    "uncertainty": null,
+    "provenance": "manual_entry",
+    "history": [
+      "2026-07-05T23:26:53.579569+00:00: object created"
+    ],
+    "references": [],
+    "notes": ""
+  }
+]

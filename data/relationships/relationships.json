@@ -1,0 +1,76 @@
+[
+  {
+    "id": "REL-000000001",
+    "source": "INST-000000001",
+    "type": "OBSERVES",
+    "target": "OBJ-000000001",
+    "created_at": "2026-07-05T23:04:33.760469+00:00",
+    "updated_at": "2026-07-05T23:39:10.878980+00:00",
+    "confidence": null,
+    "evidence": [],
+    "boundaries": [],
+    "history": [
+      "2026-07-05T23:04:33.760469+00:00: relationship created",
+      "2026-07-05T23:36:06.375280+00:00: relationship status changed to archived",
+      "2026-07-05T23:39:10.878980+00:00: relationship status changed to archived"
+    ],
+    "notes": "",
+    "status": "archived",
+    "version": "0.1"
+  },
+  {
+    "id": "REL-000000002",
+    "source": "INST-000000001",
+    "type": "OBSERVES",
+    "target": "PASTE_OBJECT_ID_HERE",
+    "created_at": "2026-07-05T23:27:07.171864+00:00",
+    "updated_at": "2026-07-05T23:39:10.878980+00:00",
+    "confidence": null,
+    "evidence": [],
+    "boundaries": [],
+    "history": [
+      "2026-07-05T23:27:07.171864+00:00: relationship created",
+      "2026-07-05T23:36:06.375280+00:00: relationship status changed to archived",
+      "2026-07-05T23:39:10.878980+00:00: relationship status changed to archived"
+    ],
+    "notes": "",
+    "status": "archived",
+    "version": "0.1"
+  },
+  {
+    "id": "REL-000000003",
+    "source": "INST-000000001",
+    "type": "OBSERVES",
+    "target": "OBJ-000000002",
+    "created_at": "2026-07-05T23:28:23.589181+00:00",
+    "updated_at": "2026-07-05T23:39:10.878980+00:00",
+    "confidence": null,
+    "evidence": [],
+    "boundaries": [],
+    "history": [
+      "2026-07-05T23:28:23.589181+00:00: relationship created",
+      "2026-07-05T23:36:06.390411+00:00: relationship status changed to archived",
+      "2026-07-05T23:39:10.878980+00:00: relationship status changed to archived"
+    ],
+    "notes": "",
+    "status": "archived",
+    "version": "0.1"
+  },
+  {
+    "id": "REL-000000004",
+    "source": "OBJ-B3D25AB4EA6A",
+    "type": "OBSERVES",
+    "target": "OBJ-000000002",
+    "created_at": "2026-07-05T23:32:22.393045+00:00",
+    "updated_at": "2026-07-05T23:32:22.393045+00:00",
+    "confidence": null,
+    "evidence": [],
+    "boundaries": [],
+    "history": [
+      "2026-07-05T23:32:22.393045+00:00: relationship created"
+    ],
+    "notes": "",
+    "status": "observed",
+    "version": "0.1"
+  }
+]
