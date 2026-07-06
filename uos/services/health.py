@@ -1,44 +1,101 @@
 """
 Universal Observatory Operating System
 Health Service v0.1
+
+Purpose:
+Inspect the observable health of the Observatory.
+
+Boundary:
+Health reports structural condition.
+Health does not establish truth, correctness, authority, or proof.
+
+UNKNOWN -> HOLD
 """
 
-from uos.kernel.registry import list_objects
-from uos.kernel.relationship import list_relationships
-from uos.kernel.knowledge_graph import (
-    graph_statistics,
-    dangling_relationships,
-)
-from uos.kernel.manifest import (
-    KERNEL_NAME,
-    KERNEL_VERSION,
-)
+from __future__ import annotations
+
+from datetime import datetime, timezone
+from typing import Any, Dict, Optional
+
+from .inspectable import Inspectable
 
 
-def kernel_health():
+class HealthService(Inspectable):
+    """
+    Aggregates inspection reports from Observatory components.
+    """
 
-    stats = graph_statistics()
-    dangling = dangling_relationships()
+    def __init__(
+        self,
+        registry: Optional[Inspectable] = None,
+        relationship_registry: Optional[Inspectable] = None,
+        timeline: Optional[Inspectable] = None,
+        graph: Optional[Inspectable] = None,
+        evidence_registry: Optional[Inspectable] = None,
+    ):
+        self.registry = registry
+        self.relationship_registry = relationship_registry
+        self.timeline = timeline
+        self.graph = graph
+        self.evidence_registry = evidence_registry
 
-    return {
+    def _inspect_component(
+        self,
+        name: str,
+        component: Optional[Inspectable],
+    ) -> Dict[str, Any]:
+        if component is None:
+            return {
+                "component": name,
+                "status": "NOT_ATTACHED",
+            }
 
-        "kernel": KERNEL_NAME,
+        try:
+            return {
+                "component": name,
+                "status": "OBSERVED",
+                "report": component.inspect(),
+            }
+        except Exception as exc:
+            return {
+                "component": name,
+                "status": "INSPECTION_ERROR",
+                "error": str(exc),
+            }
 
-        "version": KERNEL_VERSION,
+    def inspect(self) -> Dict[str, Any]:
+        components = {
+            "registry": self.registry,
+            "relationship_registry": self.relationship_registry,
+            "timeline": self.timeline,
+            "graph": self.graph,
+            "evidence_registry": self.evidence_registry,
+        }
 
-        "objects": stats["objects"],
+        reports = {
+            name: self._inspect_component(name, component)
+            for name, component in components.items()
+        }
 
-        "relationships": stats["relationships"],
+        attached = sum(
+            1 for report in reports.values()
+            if report["status"] == "OBSERVED"
+        )
 
-        "average_degree": stats["average_degree"],
+        errors = sum(
+            1 for report in reports.values()
+            if report["status"] == "INSPECTION_ERROR"
+        )
 
-        "dangling_relationships": len(dangling),
-
-        "status":
-
-            "HEALTHY"
-
-            if len(dangling) == 0
-
-            else "WARNING"
-    }
+        return {
+            "service": "HealthService",
+            "version": "v0.1",
+            "status": "OBSERVED",
+            "inspection_time": datetime.now(timezone.utc).isoformat(),
+            "components_total": len(components),
+            "components_attached": attached,
+            "inspection_errors": errors,
+            "components": reports,
+            "boundary": "HEALTH_DOES_NOT_IMPLY_CORRECTNESS",
+            "unknown_policy": "UNKNOWN -> HOLD",
+        }
