@@ -27,7 +27,7 @@ PREFIX_MAP: Dict[str, str] = {
     "object": "OBJ",
     "instrument": "INST",
     "observation": "OBS",
-    "evidence": "EVID",
+    "evidence": "EVD",
     "unknown": "UNKN",
     "question": "QUES",
     "failure": "FAIL",
