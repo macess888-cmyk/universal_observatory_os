@@ -20,13 +20,17 @@ UNKNOWN → HOLD
 
 ---
 
-## Preamble
+# Preamble
 
 This Constitution records the enduring principles intended to guide the Observatory Institute across generations.
 
 Unlike software, architectures, repositories, programming languages, or individual contributors, these principles are intended to endure through thoughtful stewardship and careful revision.
 
 Future generations are encouraged to improve this Constitution when better evidence, clearer understanding, or stronger architecture genuinely earns revision.
+
+Like the Observatory itself, this Constitution is intended to evolve through observation, evidence, thoughtful revision, and responsible stewardship.
+
+Every revision should preserve the history of the Institute while leaving it brighter than it was before.
 
 Leave the Institute brighter than you found it.
 
@@ -127,9 +131,9 @@ brighter than they found it.
 
 If evidence becomes better,
 
-we will change.
+we will observe again.
 
-If architecture becomes clearer,
+If understanding becomes clearer,
 
 we will revise.
 
@@ -174,6 +178,30 @@ for the next.
 
 ---
 
+# The Principle of Observational Integrity
+
+The Institute observes before it concludes.
+
+Observation does not establish authority.
+
+Documentation does not establish truth.
+
+Agreement does not establish reality.
+
+Evidence earns revision.
+
+Revision earns confidence.
+
+Confidence never replaces continued observation.
+
+The unknown is not a failure.
+
+It is a responsibility.
+
+UNKNOWN → HOLD
+
+---
+
 # The Observatory Charter
 
 The Observatory exists
@@ -208,7 +236,7 @@ Leave the Institute brighter than you found it.
 
 ---
 
-## Foundation Freeze Statement
+# Foundation Freeze Statement
 
 The Foundation Edition of the Constitution is hereby frozen as Version 1.0.
 
@@ -219,6 +247,10 @@ It is intended to evolve through disciplined observation, thoughtful discussion,
 No generation is expected to preserve these words unchanged.
 
 Every generation is invited to improve them with humility, evidence, and care.
+
+Every Foundation Edition becomes part of the Observatory's own observable history.
+
+Future editions should preserve that history while continuing the work.
 
 Leave the Institute brighter than you found it.
 
