@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from engines.identity import next_identity
+from uos.kernel.identity import next_identity
 
 
 TIMELINE_DIR = Path("data/timeline")

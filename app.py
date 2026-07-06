@@ -6,7 +6,7 @@ Purpose:
 Simple command interface for testing the Registry Engine.
 """
 
-from core.registry import (
+from uos.kernel.registry import (
     create_object,
     list_objects,
     search_objects,

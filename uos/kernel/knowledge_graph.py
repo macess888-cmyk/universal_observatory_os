@@ -17,8 +17,8 @@ from __future__ import annotations
 from collections import deque
 from typing import Dict, List, Set
 
-from core.registry import list_objects
-from engines.relationship import list_relationships
+from uos.kernel.registry import list_objects
+from uos.kernel.relationship import list_relationships
 
 
 def object_index() -> Dict[str, dict]:
